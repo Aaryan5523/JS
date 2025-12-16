@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Simple Image Slider</h3>
+    <img id="Slider" src="download (1).jfif" width="500" height="300">
+
+    <br></br>
+
+    <button onclick="prev()">Previous</button>
+    <button onclick="next()">Next</button>
+
+    <script>
+        let Images = ["images.jfif" , "download.jfif"];
+
+        let index = 0;
+
+        function show(){
+            document.getElementById("Slider").src = Images[index];
+        }
+        
+        function prev(){
+            index=(index - 1 + 2) % Images.length;
+            
+            show();
+        };
+        function next(){
+            index=(index + 1)% Images.length;
+            show();
+        };
+    </script>
+</body>
+</html>
