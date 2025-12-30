@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" onkeypress="showcount()">
+    <p id="count">0/100</p>
+</body>
+<script>
+    function showcount(){
+        let input = document.querySelector('#input').value;
+        let count = document.querySelector('#count');
+        let limit = 100;
+        let use = 0;
+
+        count.innerHTML = (input.length) + '/'+"100";
+        let x = use - limit
+        console.log("fgffg", x)
+        // if(()=== limit){
+        //     alert("100 reached");
+        // }
+    }
+</script>
+</html>
